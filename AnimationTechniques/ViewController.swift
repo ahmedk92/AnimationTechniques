@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet private weak var pathViewDrawRect: PathViewDrawRect!
+    @IBOutlet private weak var pathViewCAShapeLayer: PathViewCAShapeLayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        pathViewDrawRect.animate()
+        pathViewCAShapeLayer.animate()
     }
 
 
